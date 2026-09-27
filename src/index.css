@@ -127,7 +127,6 @@ button {
   border: none;
 }
 
-/* 1. Reset / Скидання базових стилів браузера */
 *,
 *::before,
 *::after {
@@ -136,7 +135,6 @@ button {
   padding: 0;
 }
 
-/* 2. Глобальні змінні проєкту */
 :root {
   --bg-body: #f4f0fa;
   --bg-form: #ffffff;
@@ -150,7 +148,6 @@ button {
   --shadow-color: rgba(90, 24, 154, 0.12);
 }
 
-/* 3. Базові налаштування документа */
 html {
   font-size: 48px;
   scroll-behavior: smooth;
@@ -170,7 +167,6 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* 4. Контейнер React (#root) */
 #root {
   min-height: 100vh;
   display: flex;
