@@ -1,0 +1,158 @@
+:root {
+  --phoneColor: #242429;
+  --textColor: white;
+}
+
+.contentSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 0.5rem;
+  background-color: var(--phoneColor);
+  font-size: 0.8rem;
+
+  color: var(--textColor);
+}
+
+.userPhotoContainer {
+  background-color: var(--phoneColor);
+  border-radius: 50%;
+  padding: 2px;
+
+  height: 3.5rem;
+  width: 3.5rem; /* border:0.16rem solid green; */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+
+  margin-top: -1.75rem;
+}
+
+.onlineStatus {
+  width: 0.55rem;
+  height: 0.55rem;
+  border-radius: 50%;
+  background-color: green;
+  /* position: absolute; */
+}
+
+.onlineStatusContainer {
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 50%;
+  padding: 0.04rem;
+  background-color: #242429;
+  position: absolute;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  right: 0.31rem;
+  bottom: 0.31rem;
+}
+
+.userPhoto {
+  /* max-height: 100%; */
+  max-width: 90%;
+
+  border-radius: 50%;
+
+  /* border:0.16rem solid green; */
+}
+
+.userName {
+  font-weight: 700;
+  font-size: 0.95rem;
+
+  text-align: center;
+
+  line-height: 0.8rem;
+}
+
+.userNick {
+  font-size: 0.5rem;
+  text-align: center;
+  color: rgb(88, 87, 87);
+}
+
+.userNick::before {
+  content: "@";
+}
+
+.fullPanelContainer {
+  font-size: 0.7rem;
+  margin: 0.6rem 0;
+
+  /* border: 2px solid white; */
+}
+
+.panelItemContainer {
+  /* border: 1px solid orange; */
+  border-radius: 0.16rem;
+  background-color: #2c2d32;
+  padding: 0.16rem;
+  position: relative;
+  /* min-width: 8rem; */
+  justify-content: space-around;
+
+  gap: 0.16rem;
+
+  display: flex;
+}
+
+.panelItem {
+  padding: 0.16rem;
+  border-radius: 0.16rem;
+  min-width: 2.3rem;
+
+  background-color: #354282;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.panelItem:last-child {
+  border-radius: 0.16rem;
+}
+
+.panelItemCategoryValue {
+  font-size: 0.5rem;
+}
+
+.panelItemCategory {
+  font-size: 0.3rem;
+}
+
+.actionPanelConteiner {
+  display: flex;
+  gap: 0.6rem;
+  margin-bottom: 0.6rem;
+}
+
+.subscribeBtn {
+  padding: 0.1rem 0.3rem;
+  font-size: 0.55rem;
+  min-width: 3.5rem;
+  background-color: #e4e5eb;
+  border-radius: 0.2rem;
+}
+
+.likeBtn {
+  background-color: inherit;
+  color: white;
+  padding: 0.2rem 0.4rem;
+}
+
+.likeBtn,
+.subscribeBtn {
+  cursor: pointer;
+}
+
+.likeCount {
+}
